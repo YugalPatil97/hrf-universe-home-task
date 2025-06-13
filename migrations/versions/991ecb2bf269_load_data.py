@@ -32,6 +32,7 @@ def upgrade() -> None:
         f"""COPY public.job_posting FROM '{file_name}' WITH (FORMAT CSV, HEADER TRUE);""",
         execution_options=None
     )
+    pass
 
 
 def downgrade() -> None:
